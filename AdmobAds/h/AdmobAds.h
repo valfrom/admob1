@@ -17,8 +17,9 @@
 #define S3E_EXT_ADMOBADS_H
 
 
-
+// \cond HIDDEN_DEFINES
 S3E_BEGIN_C_DECL
+// \endcond
 
 /**
  * Returns S3E_TRUE if the AdmobAds extension is available.

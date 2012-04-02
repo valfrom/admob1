@@ -19,7 +19,10 @@ extern s3eResult AdmobAdsInit();
 extern void AdmobAdsTerminate();
 
 
-#ifdef I3D_OS_IPHONE
+// On platforms that use a seperate UI/OS thread we can autowrap functions
+// here.   Note that we can't use the S3E_USE_OS_THREAD define since this
+// code is oftern build standalone, outside the main loader build.
+#if defined I3D_OS_IPHONE || defined I3D_OS_OSX || defined I3D_OS_LINUX || defined I3D_OS_WINDOWS
 
 static s3eResult InitAds_wrap(const char* pub_id)
 {
@@ -43,7 +46,7 @@ static s3eResult HideAds_wrap()
 #define ShowAds ShowAds_wrap
 #define HideAds HideAds_wrap
 
-#endif /* I3D_OS_IPHONE */
+#endif
 
 void AdmobAdsRegisterExt()
 {

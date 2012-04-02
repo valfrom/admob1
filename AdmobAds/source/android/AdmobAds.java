@@ -12,6 +12,9 @@ These functions are called via JNI from native code.
 import android.view.ViewGroup.LayoutParams;
 import android.view.View;
 
+import java.util.*;
+import android.view.Gravity;
+
 import com.google.ads.Ad;
 import com.google.ads.AdRequest;
 import com.google.ads.AdRequest.ErrorCode;
@@ -30,9 +33,15 @@ class AdmobAds
 	LoaderActivity.m_Activity.runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
+				HashSet set = new HashSet();
+				set.add(AdRequest.TEST_EMULATOR);
+				set.add("57D5624A18E582DED6EF166FD95DE508"); //Defy
+				AdRequest request = new AdRequest();
+				request.setTestDevices(set);
 				adView = new AdView(LoaderActivity.m_Activity, AdSize.BANNER, pub_id);
-				adView.loadAd(new AdRequest());
-				LoaderActivity.m_Activity.addContentView(adView, new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
+				adView.loadAd(request);
+				LoaderActivity.m_Activity.addContentView(adView, new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
+				adView.setGravity(Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL);
 			}
 		});
         return 0;

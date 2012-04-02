@@ -37,6 +37,7 @@ if {{ not defined IW_MKF_IWCRT}}
 #Include the extension's jar file during deployment
 deployments
 {
-	android-external-jars=lib/android/AdmobAds.jar
+    android-external-jars=lib/android/AdmobAds.jar
+    android-external-jars=lib/android/AdMob/GoogleAdMobAdsSdk-4.1.0.jar
     android-so=lib/android/libAdmobAds.so
 }
