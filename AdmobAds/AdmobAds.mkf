@@ -40,4 +40,7 @@ deployments
     android-external-jars=lib/android/AdmobAds.jar
     android-external-jars=lib/android/AdMob/GoogleAdMobAdsSdk-4.1.0.jar
     android-so=lib/android/libAdmobAds.so
+    android-extra-application-manifest='android/AndroidAppManifest.xml'
+    android-extra-manifest='android/AndroidManifest.xml'
+
 }

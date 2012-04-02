@@ -10,7 +10,6 @@ subprojects
 #### AUTO GENERATED deployment settings from DeployTool.exe. Do not edit below this line ####
 deployments
 {
-	["Default"]
-	android-external-jars='GoogleAdMobAdsSdk-4.1.0.jar'
-	android-manifest=AndroidManifest.xml
+#	["Default"]
+#	android-manifest=AndroidManifest.xml
 }

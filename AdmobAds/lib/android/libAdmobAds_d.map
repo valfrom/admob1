@@ -555,23 +555,23 @@ LOAD /Developer/android-ndk-r5/toolchains/arm-linux-androideabi-4.4.3/prebuilt/d
  .debug_pubnames
                 0x00000207       0x3a debug/AdmobAds_register.os
 
-.debug_info     0x00000000     0x5cfc
+.debug_info     0x00000000     0x5cf0
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000     0x5a57 debug/AdmobAds_platform.os
- .debug_info    0x00005a57      0x12a debug/AdmobAds.os
- .debug_info    0x00005b81      0x17b debug/AdmobAds_register.os
+ .debug_info    0x00000000     0x5a53 debug/AdmobAds_platform.os
+ .debug_info    0x00005a53      0x126 debug/AdmobAds.os
+ .debug_info    0x00005b79      0x177 debug/AdmobAds_register.os
 
-.debug_abbrev   0x00000000      0x425
+.debug_abbrev   0x00000000      0x41f
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x25b debug/AdmobAds_platform.os
- .debug_abbrev  0x0000025b       0xc8 debug/AdmobAds.os
- .debug_abbrev  0x00000323      0x102 debug/AdmobAds_register.os
+ .debug_abbrev  0x00000000      0x259 debug/AdmobAds_platform.os
+ .debug_abbrev  0x00000259       0xc6 debug/AdmobAds.os
+ .debug_abbrev  0x0000031f      0x100 debug/AdmobAds_register.os
 
-.debug_line     0x00000000      0x3ea
+.debug_line     0x00000000      0x47e
  *(.debug_line)
- .debug_line    0x00000000      0x27d debug/AdmobAds_platform.os
- .debug_line    0x0000027d       0xa3 debug/AdmobAds.os
- .debug_line    0x00000320       0xca debug/AdmobAds_register.os
+ .debug_line    0x00000000      0x2b9 debug/AdmobAds_platform.os
+ .debug_line    0x000002b9       0xcf debug/AdmobAds.os
+ .debug_line    0x00000388       0xf6 debug/AdmobAds_register.os
 
 .debug_frame    0x00000000      0x360
  *(.debug_frame)
@@ -581,12 +581,12 @@ LOAD /Developer/android-ndk-r5/toolchains/arm-linux-androideabi-4.4.3/prebuilt/d
 
 .debug_str      0x00000000     0x493f
  *(.debug_str)
- .debug_str     0x00000000     0x47f9 debug/AdmobAds_platform.os
-                               0x496c (size before relaxing)
- .debug_str     0x000047f9       0x91 debug/AdmobAds.os
-                                0x1c0 (size before relaxing)
- .debug_str     0x0000488a       0xb5 debug/AdmobAds_register.os
-                                0x1e1 (size before relaxing)
+ .debug_str     0x00000000     0x47c1 debug/AdmobAds_platform.os
+                               0x4934 (size before relaxing)
+ .debug_str     0x000047c1       0xad debug/AdmobAds.os
+                                0x188 (size before relaxing)
+ .debug_str     0x0000486e       0xd1 debug/AdmobAds_register.os
+                                0x1a9 (size before relaxing)
 
 .debug_loc      0x00000000      0x494
  *(.debug_loc)
@@ -625,7 +625,7 @@ LOAD /Developer/android-ndk-r5/toolchains/arm-linux-androideabi-4.4.3/prebuilt/d
 /DISCARD/
  *(.note.GNU-stack)
  *(.gnu_debuglink)
-OUTPUT(/Developer/Marmalade/5.2/extensions/AdmobAds/lib/android/libAdmobAds_d.so elf32-littlearm)
+OUTPUT(/Users/valeriiivanov/Documents/workspace/KeiTaiToys/MKTT/admob1/AdmobAds/lib/android/libAdmobAds_d.so elf32-littlearm)
 
 .ARM.attributes
                 0x00000000       0x2a
